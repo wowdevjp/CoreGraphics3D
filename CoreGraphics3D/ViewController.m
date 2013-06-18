@@ -7,23 +7,17 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
-@end
-
+#import "Canvas.h"
 @implementation ViewController
+{
+    IBOutlet Canvas *_canvas;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    [_canvas startAnimation];
 }
 
 @end

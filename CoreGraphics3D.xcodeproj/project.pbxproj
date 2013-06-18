@@ -19,6 +19,9 @@
 		0773C84417700D57009DD87A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0773C84217700D57009DD87A /* MainStoryboard_iPhone.storyboard */; };
 		0773C84717700D57009DD87A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0773C84517700D57009DD87A /* MainStoryboard_iPad.storyboard */; };
 		0773C84A17700D57009DD87A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0773C84917700D57009DD87A /* ViewController.m */; };
+		0773C85117700D8E009DD87A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0773C85017700D8E009DD87A /* QuartzCore.framework */; };
+		0773C85317700D91009DD87A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0773C85217700D91009DD87A /* GLKit.framework */; };
+		0773C85617700E32009DD87A /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 0773C85517700E32009DD87A /* Canvas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		0773C84617700D57009DD87A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0773C84817700D57009DD87A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0773C84917700D57009DD87A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0773C85017700D8E009DD87A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0773C85217700D91009DD87A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0773C85417700E32009DD87A /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		0773C85517700E32009DD87A /* Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
+		0773C857177018A8009DD87A /* Teapot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Teapot.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0773C85317700D91009DD87A /* GLKit.framework in Frameworks */,
+				0773C85117700D8E009DD87A /* QuartzCore.framework in Frameworks */,
 				0773C82B17700D57009DD87A /* UIKit.framework in Frameworks */,
 				0773C82D17700D57009DD87A /* Foundation.framework in Frameworks */,
 				0773C82F17700D57009DD87A /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +68,8 @@
 		0773C81E17700D57009DD87A = {
 			isa = PBXGroup;
 			children = (
+				0773C85217700D91009DD87A /* GLKit.framework */,
+				0773C85017700D8E009DD87A /* QuartzCore.framework */,
 				0773C83017700D57009DD87A /* CoreGraphics3D */,
 				0773C82917700D57009DD87A /* Frameworks */,
 				0773C82817700D57009DD87A /* Products */,
@@ -91,6 +103,9 @@
 				0773C84517700D57009DD87A /* MainStoryboard_iPad.storyboard */,
 				0773C84817700D57009DD87A /* ViewController.h */,
 				0773C84917700D57009DD87A /* ViewController.m */,
+				0773C857177018A8009DD87A /* Teapot.h */,
+				0773C85417700E32009DD87A /* Canvas.h */,
+				0773C85517700E32009DD87A /* Canvas.m */,
 				0773C83117700D57009DD87A /* Supporting Files */,
 			);
 			path = CoreGraphics3D;
@@ -180,6 +195,7 @@
 				0773C83717700D57009DD87A /* main.m in Sources */,
 				0773C83B17700D57009DD87A /* AppDelegate.m in Sources */,
 				0773C84A17700D57009DD87A /* ViewController.m in Sources */,
+				0773C85617700E32009DD87A /* Canvas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +328,7 @@
 				0773C84F17700D57009DD87A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
